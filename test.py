@@ -17,7 +17,7 @@ while True:
         ord=input("Vilket ord vill du slå upp? ")
         if ord in ordlista2: # finns ordet i ordlistan?
             # ordindex=ordlista.index(ord)
-            print("Ordet " + ord + " betyder: " + ordlista2[ord] + "\n")
+            print("\nOrdet " + ord + " betyder: " + ordlista2[ord] + "\n")
 
         else: # om ordet inte hittades
             print("\nOrdet hittades inte i ordlistan\n")
@@ -40,7 +40,7 @@ while True:
             # bortindex=ordlista.index(bort)
             ordlista2.pop(bort)
             # förklaringar.pop(bortindex)
-            print("Ordet " + bort + " är borttaget!\n")
+            print("\nOrdet " + bort + " är borttaget!\n")
             time.sleep(1)
 
         else:
@@ -59,8 +59,8 @@ while True:
             print("\nOrdet hittades inte i ordlistan\n")
 
     elif command=="5": # slut
-        print("Hejdå!")
+        print("\nHejdå!\n")
         break
 
     else: # fel
-        print("command not found")
+        print("\ncommand not found\n")
