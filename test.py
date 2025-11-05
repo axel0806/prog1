@@ -1,7 +1,12 @@
 import time
 
-ordlista=["hej", "1"]
-förklaringar=["En hälsning", "siffran 1"]
+ordlista2={
+    "hej":"en hälsning",
+    "1":"siffran 1"
+}
+
+# ordlista=["hej", "1"]
+# förklaringar=["En hälsning", "siffran 1"]
 
 while True:
 
@@ -10,41 +15,45 @@ while True:
 
     if command=="1": # söka efter ord
         ord=input("Vilket ord vill du slå upp? ")
-        if ord in ordlista: # finns ordet i ordlistan?
-            ordindex=ordlista.index(ord)
-            print("Ordet " + ord + " betyder: " + förklaringar[ordindex] + "\n")
+        if ord in ordlista2: # finns ordet i ordlistan?
+            # ordindex=ordlista.index(ord)
+            print("Ordet " + ord + " betyder: " + ordlista2[ord] + "\n")
 
         else: # om ordet inte hittades
             print("\nOrdet hittades inte i ordlistan\n")
-        time.sleep(1
+        time.sleep(1)
 
     elif command=="2": # lägga till ord
         l_ord=input("Vilket ord vill du lägga till? ")
-        if l_ord in ordlista:
-            print("\nOrdet finns redan i ordlistan!\n")
+        if l_ord in ordlista2:
+            print("\nOrdet finns redan i ordlistan\n")
         else:
-            ordlista.append(l_ord)
-            förklaringar.append(input("Vad betyder ordert? "))
+            # ordlista2.append(l_ord)
+            f_ord=input("Vad betyder ordet? ")
+            ordlista2[l_ord]=f_ord
+            # förklaringar.append(input("Vad betyder ordert? "))
             time.sleep(1)
 
     elif command=="3": # ta bort ord
         bort=input("Vilket ord vill du ta bort? ")
-        if bort in ordlista:
-            bortindex=ordlista.index(bort)
-            ordlista.pop(bortindex)
-            förklaringar.pop(bortindex)
+        if bort in ordlista2:
+            # bortindex=ordlista.index(bort)
+            ordlista2.pop(bort)
+            # förklaringar.pop(bortindex)
             print("Ordet " + bort + " är borttaget!\n")
+            time.sleep(1)
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
 
     elif command=="4":
         andra=input("Vilket ords betydelse vill du ändra? ")
-        if andra in ordlista:
-            andraIndex=ordlista.index(andra)
+        if andra in ordlista2:
+            # andraIndex=ordlista.index(andra)
             andring=input("Vad ska ordet ha för någon förklaring? ")
-            förklaringar.pop(andraIndex)
-            förklaringar.insert(andraIndex, andring)
+            ordlista2[andra]=andring
+            # förklaringar.pop(andraIndex)
+            # förklaringar.insert(andraIndex, andring)
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
