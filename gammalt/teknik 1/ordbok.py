@@ -12,9 +12,29 @@ ordlista2={
 # ordlista=["hej", "1"]
 # förklaringar=["En hälsning", "siffran 1"]
 
+namn=(r"""
+   ____          _ _           _              
+  / __ \        | | |         | |             
+ | |  | |_ __ __| | |__   ___ | | _____ _ __  
+ | |  | | '__/ _` | '_ \ / _ \| |/ / _ \ '_ \ 
+ | |__| | | | (_| | |_) | (_) |   <  __/ | | |
+  \____/|_|  \__,_|_.__/ \___/|_|\_\___|_| |_|
+                                              
+                                              """)
+
+#   ____          _ _           _              
+#  / __ \        | | |         | |             
+# | |  | |_ __ __| | |__   ___ | | _____ _ __  
+# | |  | | '__/ _` | '_ \ / _ \| |/ / _ \ '_ \ 
+# | |__| | | | (_| | |_) | (_) |   <  __/ | | |
+#  \____/|_|  \__,_|_.__/ \___/|_|\_\___|_| |_|
+                                              
+                                              
+
 while True:
 
     # print("Vad vill du göra?\n1) Slå upp ett ord.\n2) Lägga till ett ord.\n3) Ta bort ett ord.\n4) Ändra förklaring av ett ord.\n5) Avsluta.")
+    print(logotyp)
     print("1) Slå upp ett ord.")
     print("2) Lägga till ett ord.")
     print("3) Ta bort ett ord.")
