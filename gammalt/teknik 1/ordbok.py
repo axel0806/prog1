@@ -34,7 +34,7 @@ namn=(r"""
 while True:
 
     # print("Vad vill du göra?\n1) Slå upp ett ord.\n2) Lägga till ett ord.\n3) Ta bort ett ord.\n4) Ändra förklaring av ett ord.\n5) Avsluta.")
-    print(logotyp)
+    print(namn)
     print("1) Slå upp ett ord.")
     print("2) Lägga till ett ord.")
     print("3) Ta bort ett ord.")
