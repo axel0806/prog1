@@ -1,4 +1,8 @@
 import time
+# from colorama import Fore, Back, Style, init # type: ignore
+# from termcolor import colored # type: ignore
+
+# init(autoreset=True)
 
 ordlista2={
     "hej":"en hälsning",
@@ -10,7 +14,12 @@ ordlista2={
 
 while True:
 
-    print("Vad vill du göra?\n1) Slå upp ett ord.\n2) Lägga till ett ord.\n3) Ta bort ett ord.\n4) Ändra förklaring av ett ord.\n5) Avsluta.")
+    # print("Vad vill du göra?\n1) Slå upp ett ord.\n2) Lägga till ett ord.\n3) Ta bort ett ord.\n4) Ändra förklaring av ett ord.\n5) Avsluta.")
+    print("1) Slå upp ett ord.")
+    print("2) Lägga till ett ord.")
+    print("3) Ta bort ett ord.")
+    print("4) Ändra förklaring av ett ord.")
+    print("5) Avsluta.")
     command=input("")
 
     if command=="1": # söka efter ord
