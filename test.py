@@ -70,7 +70,9 @@ while True:
 
     elif command=="5": # slut
         print("\nHejdå!\n")
+        time.sleep(1)
         break
 
     else: # fel
         print("\ncommand not found\n")
+        time.sleep(1)
