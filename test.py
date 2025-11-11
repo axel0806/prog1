@@ -41,7 +41,7 @@ while True:
             f_ord=input("Vad betyder ordet? ")
             ordlista2[l_ord]=f_ord
             # förklaringar.append(input("Vad betyder ordert? "))
-            time.sleep(1)
+        time.sleep(1)
 
     elif command=="3": # ta bort ord
         bort=input("Vilket ord vill du ta bort? ")
@@ -50,10 +50,10 @@ while True:
             ordlista2.pop(bort)
             # förklaringar.pop(bortindex)
             print("\nOrdet " + bort + " är borttaget!\n")
-            time.sleep(1)
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
+        time.sleep(1)
 
     elif command=="4":
         andra=input("Vilket ords betydelse vill du ändra? ")
@@ -66,6 +66,7 @@ while True:
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
+        time.sleep(1)
 
     elif command=="5": # slut
         print("\nHejdå!\n")
