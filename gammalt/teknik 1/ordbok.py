@@ -30,11 +30,12 @@ namn=(r"""
 #  \____/|_|  \__,_|_.__/ \___/|_|\_\___|_| |_|
                                               
                                               
+print(namn)
 
 while True:
 
     # print("Vad vill du göra?\n1) Slå upp ett ord.\n2) Lägga till ett ord.\n3) Ta bort ett ord.\n4) Ändra förklaring av ett ord.\n5) Avsluta.")
-    print(namn)
+    # print(namn)
     print("1) Slå upp ett ord.")
     print("2) Lägga till ett ord.")
     print("3) Ta bort ett ord.")
@@ -50,7 +51,6 @@ while True:
 
         else: # om ordet inte hittades
             print("\nOrdet hittades inte i ordlistan\n")
-        time.sleep(1)
 
     elif command=="2": # lägga till ord
         l_ord=input("Vilket ord vill du lägga till? ")
@@ -61,7 +61,6 @@ while True:
             f_ord=input("Vad betyder ordet? ")
             ordlista2[l_ord]=f_ord
             # förklaringar.append(input("Vad betyder ordert? "))
-        time.sleep(1)
 
     elif command=="3": # ta bort ord
         bort=input("Vilket ord vill du ta bort? ")
@@ -73,7 +72,6 @@ while True:
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
-        time.sleep(1)
 
     elif command=="4":
         andra=input("Vilket ords betydelse vill du ändra? ")
@@ -86,13 +84,10 @@ while True:
 
         else:
             print("\nOrdet hittades inte i ordlistan\n")
-        time.sleep(1)
 
     elif command=="5": # slut
         print("\nHejdå!\n")
-        time.sleep(1)
         break
 
     else: # fel
         print("\ncommand not found\n")
-        time.sleep(1)
